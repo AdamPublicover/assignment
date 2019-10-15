@@ -1,6 +1,3 @@
-env:
-  - $NOW_TOKEN=7dlabe6c1
-
 language: node_js
 node_js:
   - "10.9.0"
@@ -10,7 +7,6 @@ cache: npm
 before_install:
   - "npm config set spin false"
   - "npm i -g now"
-  - mkdir public
 
 install:
   - npm install
